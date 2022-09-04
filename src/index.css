@@ -58,7 +58,8 @@ a {
 .about--img {
   justify-content: flex-start;
   border-radius: 0.5rem;
-  padding-right: 30px;
+  padding-right: 5rem;
+  margin-bottom: 2rem;
   width: 30rem !important;
 }
 

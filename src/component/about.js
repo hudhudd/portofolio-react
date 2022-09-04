@@ -7,7 +7,7 @@ function About() {
       <div className="section--title">
         <h1>About</h1>
       </div>
-      <div className="about--content">
+      <Grid className="about--content">
         <Image
           className="about--img"
           src={profil4}
@@ -28,7 +28,7 @@ function About() {
             team and individual settings.
           </p>
         </div>
-      </div>
+      </Grid>
     </Grid>
   );
 }
