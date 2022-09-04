@@ -1,4 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 body {
+  font-family: Poppins, sans-serif;
+  font-size: 0.938rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home--name {
+  color: #40c057;
+}
+
+.home--data {
+  align-self: center;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  padding-left: 6%;
+}
+
+.home--all {
+  position: relative;
+  row-gap: 5rem;
+  padding: 4rem 0 5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.home--image {
+  padding-right: 20px;
+  margin-top: 0px;
+  width: 500px !important;
+  flex-direction: flex-end;
+}
+
+.about--img {
+  justify-content: flex-start;
+  border-radius: 0.5rem;
+  padding-right: 30px;
+  width: 30rem !important;
+}
+
+.about--container {
+  display: flex;
+  padding-left: 7%;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  text-align: center;
+}
+
+.section--title {
+  margin-bottom: 3rem;
+  position: relative;
+  font-size: 1rem;
+  color: #40c057;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.about--sub {
+  margin-bottom: 1rem;
+}
+
+.about--content {
+  display: flex;
+  flex-direction: row;
+}
+
+.about--text {
+  display: flex;
+  flex-direction: column;
+  column-gap: 5rem;
+  text-align: left;
+  width: 50%;
+  max-width: 30rem;
+  justify-content: center;
+}
 

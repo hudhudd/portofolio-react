@@ -3,18 +3,23 @@ import {
   AppShell,
   Navbar,
   Header,
-  Footer,
-  Text,
   MediaQuery,
   Burger,
   useMantineTheme,
 } from "@mantine/core";
 
 import { Stack, Group, Button } from "@mantine/core";
+import Home from "../home";
+import About from "../about";
+import Experience from "../experience";
+import Education from "../education";
+import Skills from "../skill";
+import Footeer from "../footeer";
 
 export default function AppShellDemo() {
   const theme = useMantineTheme();
   const [opened, setOpened] = useState(false);
+
   return (
     <AppShell
       styles={{
@@ -34,24 +39,61 @@ export default function AppShellDemo() {
             p="md"
             hiddenBreakpoint="sm"
             hidden={!opened}
-            width={{ sm: 200, lg: 300 }}
+            style={{ flexDirection: "row", flexWrap: "wrap" }}
           >
-            <Stack>
-              <Button variant="subtle" radius="xs" size="lg">
+            <Stack className="shell--nav">
+              <Button
+                color="green"
+                variant="subtle"
+                radius="xs"
+                size="lg"
+                compact
+              >
                 Home
               </Button>
 
-              <Button variant="subtle" radius="xs" size="lg">
-                Settings
+              <Button
+                color="green"
+                variant="subtle"
+                radius="xs"
+                size="lg"
+                compact
+              >
+                About
+              </Button>
+
+              <Button
+                color="green"
+                variant="subtle"
+                radius="xs"
+                size="lg"
+                compact
+              >
+                Education
+              </Button>
+
+              <Button
+                color="green"
+                variant="subtle"
+                radius="xs"
+                size="lg"
+                compact
+              >
+                Experience
+              </Button>
+
+              <Button
+                color="green"
+                variant="subtle"
+                radius="xs"
+                size="lg"
+                compact
+              >
+                Skills
               </Button>
             </Stack>
           </Navbar>
         </MediaQuery>
-      }
-      footer={
-        <Footer height={60} p="md">
-          Application footer
-        </Footer>
       }
       header={
         <Header height={70} p="md">
@@ -68,13 +110,25 @@ export default function AppShellDemo() {
               />
             </MediaQuery>
             <MediaQuery smallerThan="sm" styles={{ display: "none" }}>
-              <Group>
-                <Button variant="subtle" radius="xs" size="lg">
+              <Group className="shell--header" spacing="xs">
+                <Button color="green" variant="subtle" radius="xs" size="lg">
                   Home
                 </Button>
 
-                <Button variant="subtle" radius="xs" size="lg">
-                  Settings
+                <Button color="green" variant="subtle" radius="xs" size="lg">
+                  About
+                </Button>
+
+                <Button color="green" variant="subtle" radius="xs" size="lg">
+                  Education
+                </Button>
+
+                <Button color="green" variant="subtle" radius="xs" size="lg">
+                  Experience
+                </Button>
+
+                <Button color="green" variant="subtle" radius="xs" size="lg">
+                  Skills
                 </Button>
               </Group>
             </MediaQuery>
@@ -82,7 +136,14 @@ export default function AppShellDemo() {
         </Header>
       }
     >
-      <Text>Resize app to see responsive navbar in action</Text>
+      <Stack>
+        <Home />
+        <About />
+        <Experience />
+        <Education />
+        <Skills />
+        <Footeer />
+      </Stack>
     </AppShell>
   );
 }

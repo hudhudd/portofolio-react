@@ -1,11 +1,12 @@
-import "./App.css"
+import "./App.css";
 import AppShellDemo from "./component/navbar/appshell";
+import Topscroll from "./component/navbar/affix";
 
 function App() {
   return (
     <div className="App">
       <AppShellDemo />
-      <h1>test</h1>
+      <Topscroll />
     </div>
   );
 }
