@@ -69,7 +69,8 @@ a {
   flex-direction: column;
   align-items: center;
   row-gap: 1rem;
-  text-align: center;
+  text-align: left;
+  margin-bottom: 7rem;
 }
 
 .section--title {
@@ -104,7 +105,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   row-gap: 2rem;
   padding-right: 20%;
   padding-left: 15%;
@@ -126,7 +127,7 @@ a {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   row-gap: 2rem;
   padding-right: 10%;
   padding-left: 15%;
@@ -149,7 +150,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   row-gap: 2rem;
   padding-right: 10%;
   padding-left: 15%;
@@ -167,4 +168,86 @@ a {
   justify-content: center;
   padding-left: 0;
 }
+@media screen and (max-width: 1255px) {
 
+.home--data {
+  align-self: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  padding-left: 6%;
+  margin-top: 1rem;
+}
+}
+@media screen and (max-width: 1149px) {
+  
+  .about--text {
+    display: flex;
+    flex-direction: column;
+    column-gap: 5rem;
+    text-align: left;
+
+    max-width: 25rem;
+    margin-left: 16%;
+    justify-content: center;
+  }
+
+  .about--container {
+    display: flex;
+    padding-left: 7%;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    row-gap: 1rem;
+    text-align: center;
+  }
+
+  .about--img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-bottom: 2rem;
+    max-width: 25rem;
+  }
+
+  .exp--andro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 2rem;
+    padding: 10%;
+    margin-bottom: 2rem;
+  }
+
+  .exp--backend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 2rem;
+    padding: 10%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .exp--hardware {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 2rem;
+    padding: 10%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .section--title {
+    margin-bottom: 1.5rem;
+    position: relative;
+    font-size: 1rem;
+    color: #40c057;
+    margin-top: .5rem;
+    text-align: center;
+  }
+}

@@ -19,7 +19,7 @@ function Home() {
         styles={{ display: "none" }}
         style={{ width: 300, marginLeft: "auto", marginRight: "auto" }}
       >
-        <MediaQuery smallerThan="sm" styles={{ display: "none" }}>
+        <MediaQuery smallerThan={1255} styles={{ display: "none" }}>
           <Image src={profil3} alt="With default placeholder" withPlaceholder />
         </MediaQuery>
       </div>
