@@ -1,4 +1,4 @@
-import { Grid, Image } from "@mantine/core";
+import { Grid, Image, MediaQuery } from "@mantine/core";
 import profil3 from "../component/assets/profil3.png";
 
 function Home() {
@@ -15,9 +15,13 @@ function Home() {
 
       <div
         className="home--image"
-        style={{ width:300 , marginLeft: "auto", marginRight: "auto" }}
+        smallerThan="sm"
+        styles={{ display: "none" }}
+        style={{ width: 300, marginLeft: "auto", marginRight: "auto" }}
       >
-        <Image src={profil3} alt="With default placeholder" withPlaceholder />
+        <MediaQuery smallerThan="sm" styles={{ display: "none" }}>
+          <Image src={profil3} alt="With default placeholder" withPlaceholder />
+        </MediaQuery>
       </div>
     </Grid>
   );

@@ -100,3 +100,71 @@ a {
   justify-content: center;
 }
 
+.exp--andro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  row-gap: 2rem;
+  padding-right: 20%;
+  padding-left: 15%;
+  margin-bottom: 4rem;
+}
+
+.andro--par {
+  max-width: 30rem;
+}
+
+.andro--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.exp--backend {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content:space-between;
+  row-gap: 2rem;
+  padding-right: 10%;
+  padding-left: 15%;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+
+.django--par {
+  max-width: 20rem;
+}
+
+.django--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.exp--hardware {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  row-gap: 2rem;
+  padding-right: 10%;
+  padding-left: 15%;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+
+.hw--par {
+  max-width: 20rem;
+}
+
+.hw--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+}
+
