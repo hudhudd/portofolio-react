@@ -64,16 +64,17 @@ function Education() {
         </div>
         <div
           className="edu--chrono"
-          style={{ width: "700px", height: "800px" }}
+          style={{ width: "700px", height: "650px" }}
         >
           <Chrono
             items={data}
             itemWidth="340"
             mode="HORIZONTAL"
+            borderLessCards="false"
             theme={{
               primary: "green",
               secondary: "#EBFBEE",
-              cardBgColor: "#E6FCF5",
+              cardBgColor: "transparant",
               cardForeColor: "#087F5B",
               titleColor: "black",
               titleColorActive: "#2B8A3E",
@@ -85,14 +86,14 @@ function Education() {
             hideControls="true"
           />
         </div>
-        <div className="edu--phone" style={{ width: "100%", height: "500px" }}>
+        <div className="edu--phone" style={{ width: "100%", height: "700px" }}>
           <Chrono
             items={data}
             mode="VERTICAL"
             theme={{
               primary: "green",
               secondary: "#EBFBEE",
-              cardBgColor: "#E6FCF5",
+              cardBgColor: "transparant",
               cardForeColor: "#087F5B",
               titleColor: "black",
               titleColorActive: "#2B8A3E",
