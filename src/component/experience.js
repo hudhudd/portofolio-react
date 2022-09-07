@@ -1,8 +1,4 @@
-import {
-  Stack,
-  Image,
-  // Group,
-} from "@mantine/core";
+import { Stack, Image } from "@mantine/core";
 import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { Carousel } from "@mantine/carousel";
@@ -29,10 +25,6 @@ const kp = [
 ];
 
 function Experience() {
-  // const theme = useMantineTheme();
-  // const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm}px)`);
-
-  // const { classes } = useStyles();
   const autoplay1 = useRef(Autoplay({ delay: 2000 }));
   const autoplay2 = useRef(Autoplay({ delay: 2000 }));
   const autoplay3 = useRef(Autoplay({ delay: 2000 }));

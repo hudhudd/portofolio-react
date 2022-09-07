@@ -1,4 +1,4 @@
-import { Grid, Image } from "@mantine/core";
+import { Grid, Image, Button } from "@mantine/core";
 import profil4 from "../component/assets/profil4.png";
 
 function About() {
@@ -27,6 +27,17 @@ function About() {
             project on my internship. I am adabtable and working well in both
             team and individual settings.
           </p>
+          <Button
+            variant="outline"
+            color="green"
+            component="a"
+            target="_blank"
+            rel="noopener noreferrer"
+            href=""
+            radius="md"
+          >
+            Download CV
+          </Button>
         </div>
       </Grid>
     </Grid>
