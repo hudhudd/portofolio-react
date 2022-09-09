@@ -1,8 +1,12 @@
 import { Stack } from "@mantine/core";
 import { Chrono } from "react-chrono";
-// import data from "./data";
+import { useInView } from "react-intersection-observer";
 
 function Education() {
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+  });
+
   const data = [
     {
       title: "Universitas Gadjah Mada",
@@ -57,7 +61,11 @@ function Education() {
   ];
 
   return (
-    <div className="edu--container">
+    <div
+      id="edu"
+      ref={ref}
+      className={["edu--container", `${inView ? "showClass" : ""}`].join(" ")}
+    >
       <Stack>
         <div className="section--title">
           <h1>Education</h1>

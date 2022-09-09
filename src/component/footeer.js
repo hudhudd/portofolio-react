@@ -1,9 +1,22 @@
 import { MediaQuery, Button } from "@mantine/core";
 import { IconBrandTwitter } from "@tabler/icons";
+import { useInView } from "react-intersection-observer";
 
 function Footeer() {
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+  });
+
   return (
-    <footer height={65} p="md">
+    <footer
+      height={65}
+      p="md"
+      id="footer"
+      ref={ref}
+      className={["footer--container", `${inView ? "showClass" : ""}`].join(
+        " "
+      )}
+    >
       <MediaQuery>
         <Button
           component="a"

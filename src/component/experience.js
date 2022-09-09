@@ -2,6 +2,7 @@ import { Stack, Image } from "@mantine/core";
 import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { Carousel } from "@mantine/carousel";
+import { useInView } from "react-intersection-observer";
 
 const andro = [
   "https://cdn.discordapp.com/attachments/860057664984711188/1016586466010341436/andro1.jpeg",
@@ -28,6 +29,9 @@ function Experience() {
   const autoplay1 = useRef(Autoplay({ delay: 2000 }));
   const autoplay2 = useRef(Autoplay({ delay: 2000 }));
   const autoplay3 = useRef(Autoplay({ delay: 2000 }));
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+  });
 
   const slides1 = andro.map((url) => (
     <Carousel.Slide key={url}>
@@ -48,7 +52,7 @@ function Experience() {
   ));
 
   return (
-    <div className="exp--container">
+    <div id="exp" ref={ref} className={["about--container", `${inView ? "showClass" : ""}`].join(" ")}>
       <div className="section--title">
         <h1>Experience</h1>
       </div>
