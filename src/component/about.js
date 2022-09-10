@@ -1,18 +1,16 @@
-import { Grid, Image, Button, createStyles } from "@mantine/core";
+import { Grid, Image, Button } from "@mantine/core";
 import profil4 from "../component/assets/profil4.png";
 import { useInView } from "react-intersection-observer";
 
 function About() {
-  const { ref, inView } = useInView({
+  const { ref, inView, entry } = useInView({
     threshold: 0.1,
   });
-  const { classes } = useStyles();
-
   return (
     <div
+      className={[`${inView ? "showClass" : ""}`].join(" ")}
       id="about"
       ref={ref}
-      className={[classes.wrapper, `${inView ? "showClass" : ""}`].join(" ")}
     >
       <Grid className="about--container">
         <div className="section--title">
@@ -57,19 +55,3 @@ function About() {
 }
 
 export default About;
-
-const useStyles = createStyles((theme) => ({
-  wrapper: {
-    minHeight: "90vh",
-    position: "relative",
-    paddingTop: 100,
-    paddingBottom: 130,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-
-    "@media (max-width: 520px)": {
-      paddingTop: 80,
-      paddingBottom: 50,
-    },
-  },
-}));

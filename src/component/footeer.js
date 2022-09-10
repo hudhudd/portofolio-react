@@ -1,40 +1,71 @@
-import { MediaQuery, Button } from "@mantine/core";
-import { IconBrandTwitter } from "@tabler/icons";
-import { useInView } from "react-intersection-observer";
+import { MediaQuery, Button, Group, CopyButton, Tooltip } from "@mantine/core";
+import { IconBrandLinkedin, IconBrandInstagram, IconMail } from "@tabler/icons";
 
 function Footeer() {
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-  });
-
   return (
-    <footer
-      height={65}
-      p="md"
-      id="footer"
-      ref={ref}
-      className={["footer--container", `${inView ? "showClass" : ""}`].join(
-        " "
-      )}
-    >
+    <footer height={65} p="md">
       <MediaQuery>
-        <Button
-          component="a"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://twitter.com/mantinedev"
-          leftIcon={<IconBrandTwitter size={18} />}
-          styles={(theme) => ({
-            root: {
-              backgroundColor: "#00acee",
-              paddingRight: 0,
+        <Group>
+          <Button
+            component="a"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/yehuda-suryayanna-5016ba114/"
+            leftIcon={<IconBrandLinkedin size={18} />}
+            styles={(theme) => ({
+              root: {
+                backgroundColor: "#0072b1",
+                paddingRight: 0,
+                paddingLeft: 11,
 
-              "&:hover": {
-                backgroundColor: theme.fn.darken("#00acee", 0.05),
+                "&:hover": {
+                  backgroundColor: theme.fn.darken("#00acee", 0.05),
+                },
               },
-            },
-          })}
-        ></Button>
+            })}
+          ></Button>
+
+          <Button
+            component="a"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/hoeddah_3/"
+            leftIcon={<IconBrandInstagram size={18} />}
+            styles={(theme) => ({
+              root: {
+                backgroundColor: "#ed6ea0",
+                paddingRight: 0,
+                paddingLeft: 11,
+
+                "&:hover": {
+                  backgroundColor: theme.fn.darken("#FAA2C1", 0.05),
+                },
+              },
+            })}
+          ></Button>
+
+          <CopyButton value="yehudaor987@gmail.com">
+            {({ copied, copy }) => (
+              <Tooltip label={copied ? 'Copied' : 'Copy'} withArrow position="top">
+                <Button
+                  leftIcon={<IconMail size={18} />}
+                  onClick={copy}
+                  styles={(theme) => ({
+                    root: {
+                      backgroundColor: "#ADB5BD ",
+                      paddingRight: 0,
+                      paddingLeft: 11,
+  
+                      "&:hover": {
+                        backgroundColor: theme.fn.darken("#CED4DA", 0.05),
+                      },
+                    },
+                  })}
+                ></Button>
+              </Tooltip>
+            )}
+          </CopyButton>
+        </Group>
       </MediaQuery>
     </footer>
   );

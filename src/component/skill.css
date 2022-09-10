@@ -1,0 +1,22 @@
+.skill--name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.7rem;
+    padding-left: 1rem;
+  }
+  
+  .skill--card {
+    width: 100%;
+    /* max-height: 6.4rem; */
+  }
+  
+  .card--persen {
+    padding-right: 1.5rem;
+  }
+  
+  .skill--prog {
+    padding-bottom: 0;
+  }
+  

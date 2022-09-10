@@ -3,7 +3,7 @@ import { Chrono } from "react-chrono";
 import { useInView } from "react-intersection-observer";
 
 function Education() {
-  const { ref, inView } = useInView({
+  const { ref, inView, entry } = useInView({
     threshold: 0.1,
   });
 
@@ -62,57 +62,62 @@ function Education() {
 
   return (
     <div
+      className={[`${inView ? "showClass" : ""}`].join(" ")}
       id="edu"
       ref={ref}
-      className={["edu--container", `${inView ? "showClass" : ""}`].join(" ")}
     >
-      <Stack>
-        <div className="section--title">
-          <h1>Education</h1>
-        </div>
-        <div
-          className="edu--chrono"
-          style={{ width: "700px", height: "650px" }}
-        >
-          <Chrono
-            items={data}
-            itemWidth="340"
-            mode="HORIZONTAL"
-            borderLessCards="false"
-            theme={{
-              primary: "green",
-              secondary: "#EBFBEE",
-              cardBgColor: "transparant",
-              cardForeColor: "#087F5B",
-              titleColor: "black",
-              titleColorActive: "#2B8A3E",
-            }}
-            useReadMore="false"
-            fontSizes={{
-              title: ".9rem",
-            }}
-            hideControls="true"
-          />
-        </div>
-        <div className="edu--phone" style={{ width: "100%", height: "700px" }}>
-          <Chrono
-            items={data}
-            mode="VERTICAL"
-            theme={{
-              primary: "green",
-              secondary: "#EBFBEE",
-              cardBgColor: "transparant",
-              cardForeColor: "#087F5B",
-              titleColor: "black",
-              titleColorActive: "#2B8A3E",
-            }}
-            fontSizes={{
-              title: ".9rem",
-            }}
-            hideControls="true"
-          />
-        </div>
-      </Stack>
+      <div className="edu--container">
+        <Stack>
+          <div className="section--title">
+            <h1>Education</h1>
+          </div>
+          <div
+            className="edu--chrono"
+            style={{ width: "700px", height: "650px" }}
+          >
+            <Chrono
+              items={data}
+              itemWidth="340"
+              mode="HORIZONTAL"
+              borderLessCards="false"
+              theme={{
+                primary: "green",
+                secondary: "#EBFBEE",
+                cardBgColor: "transparant",
+                cardForeColor: "#087F5B",
+                titleColor: "black",
+                titleColorActive: "#2B8A3E",
+              }}
+              useReadMore="false"
+              fontSizes={{
+                title: ".9rem",
+              }}
+              hideControls="true"
+            />
+          </div>
+          <div
+            className="edu--phone"
+            style={{ width: "100%", height: "850px" }}
+          >
+            <Chrono
+              items={data}
+              mode="VERTICAL"
+              theme={{
+                primary: "green",
+                secondary: "#EBFBEE",
+                cardBgColor: "transparant",
+                cardForeColor: "#087F5B",
+                titleColor: "black",
+                titleColorActive: "#2B8A3E",
+              }}
+              fontSizes={{
+                title: ".9rem",
+              }}
+              hideControls="true"
+            />
+          </div>
+        </Stack>
+      </div>
     </div>
   );
 }
