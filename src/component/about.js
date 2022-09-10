@@ -26,13 +26,13 @@ function About() {
           <div className="about--text">
             <h2 className="about--sub">I am Yehuda</h2>
             <p>
-              I am a bachelor's degree of Electrical Engineering Gadjah Mada
-              University. I am interested in software engineering, back-end
-              development, IoT development, hardware engineering, and firmware
-              programming.
+              I am a unergraduate degree of Electrical Engineering Gadjah Mada
+              University. I am interested in software engineering, front-end
+              development, back-end development, IoT development, hardware
+              engineering, and firmware programming.
             </p>
             <p>
-              I am a fast learner, excelling on my study, and delivering
+              I am a fast learner, fast worker, excelling on my study, and delivering
               well-done project on my internship. I am adabtable and working
               well in both team and individual settings.
             </p>
