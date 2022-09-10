@@ -42,7 +42,7 @@ function About() {
               component="a"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://cdn.discordapp.com/attachments/860057664984711188/1018040396531630102/CV_Yehuda_Yovel_Suryayanna.pdf"
+              href="https://drive.google.com/file/d/13Q3bqV5iSt2d71A5yjmAbqNP713xDO92/view?usp=sharing"
               radius="md"
             >
               Download CV
