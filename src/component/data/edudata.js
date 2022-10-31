@@ -22,7 +22,7 @@ const edudata = [
           period: "2019",
           title: "Tutor Assistant of Electrical Mathematics",
           description:
-            "Led a team of assistants to help students in learning Mathematics",
+            "",
         },
         {
           period: "2018",
