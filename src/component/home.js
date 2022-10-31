@@ -10,7 +10,7 @@ function Home() {
   return (
     <div
       className={[`${inView ? "showClass" : ""}`].join(" ")}
-      id="home"
+      id="h"
       ref={ref}
     >
       <Grid className="home--all">

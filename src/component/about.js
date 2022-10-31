@@ -9,7 +9,7 @@ function About() {
   return (
     <div
       className={[`${inView ? "showClass" : ""}`].join(" ")}
-      id="about"
+      id="abt"
       ref={ref}
     >
       <Grid className="about--container">

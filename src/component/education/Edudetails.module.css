@@ -1,0 +1,26 @@
+.stackStyle {
+  align-items: stretch;
+  flex: 1;
+  justify-content: center;
+  padding: 0 3em 5em 3em;
+}
+
+.textTitle {
+  margin-top: 5vh;
+}
+
+.listStyle {
+  justify-content: center;
+  padding-left: 15vh;
+  padding-top: 2vh;
+}
+
+.iconStyle {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .listStyle {
+    padding-left: 5vh;
+  }
+}

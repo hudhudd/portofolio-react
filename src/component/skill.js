@@ -26,11 +26,11 @@ import {
     return (
       <div
         className={[`${inView ? "showClass" : ""}`].join(" ")}
-        id="skills"
+        id="sk"
         ref={ref}
       >
         <div className="section--title">
-          <h1>About</h1>
+          <h1>Skills</h1>
         </div>
         <Grid grow>
           <Grid.Col md={6} lg={3}>

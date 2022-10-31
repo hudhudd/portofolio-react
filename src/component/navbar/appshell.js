@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "../navbar/appshell.css"
+import "../navbar/appshell.css";
+import { useWindowScroll } from "@mantine/hooks";
 import {
   AppShell,
   Menu,
@@ -21,13 +22,14 @@ import { Stack, Group, Button } from "@mantine/core";
 import Home from "../home";
 import About from "../about";
 import Experience from "../experience";
-import Education from "../education";
+import Education from "../education/Education";
 import Skills from "../skill";
 import Footeer from "../footeer";
 
 export default function AppShellDemo() {
   const theme = useMantineTheme();
   const [opened, setOpened] = useState(false);
+  const [scroll, scrollTo] = useWindowScroll();
 
   return (
     <AppShell
@@ -60,6 +62,7 @@ export default function AppShellDemo() {
                     color="green"
                     variant="link"
                     icon={<IconHome size={14} />}
+                    onClick={() => scrollTo({ y: 0 })}
                     component="a"
                     href="#home"
                   >
@@ -72,6 +75,7 @@ export default function AppShellDemo() {
                     radius="xs"
                     size="lg"
                     icon={<IconUserCircle size={14} />}
+                    onClick={() => scrollTo({ y: 645.6 })}
                     component="a"
                     href="#about"
                   >
@@ -84,8 +88,9 @@ export default function AppShellDemo() {
                     radius="xs"
                     size="lg"
                     icon={<IconDeviceLaptop size={14} />}
+                    onClick={() => scrollTo({ y: 1572 })}
                     component="a"
-                    href="#exp"
+                    href="#experience"
                   >
                     Experience
                   </Menu.Item>
@@ -96,8 +101,9 @@ export default function AppShellDemo() {
                     radius="xs"
                     size="lg"
                     icon={<IconBooks size={14} />}
+                    onClick={() => scrollTo({ y: 4291.2 })}
                     component="a"
-                    href="#edu"
+                    href="#education"
                   >
                     Education
                   </Menu.Item>
@@ -108,6 +114,7 @@ export default function AppShellDemo() {
                     radius="xs"
                     size="lg"
                     icon={<IconTerminal2 size={14} />}
+                    onClick={() => scrollTo({ y: 5043.2 })}
                     component="a"
                     href="#skills"
                   >
@@ -123,8 +130,9 @@ export default function AppShellDemo() {
                   variant="subtle"
                   radius="xs"
                   size="lg"
-                  component="a"
+                  onClick={() => scrollTo({ y: 0 })}
                   href="#home"
+                  component="a"
                 >
                   Home
                 </Button>
@@ -134,8 +142,9 @@ export default function AppShellDemo() {
                   variant="subtle"
                   radius="xs"
                   size="lg"
-                  component="a"
+                  onClick={() => scrollTo({ y: 653 })}
                   href="#about"
+                  component="a"
                 >
                   About
                 </Button>
@@ -145,8 +154,9 @@ export default function AppShellDemo() {
                   variant="subtle"
                   radius="xs"
                   size="lg"
+                  onClick={() => scrollTo({ y: 1269 })}
+                  href="#experience"
                   component="a"
-                  href="#exp"
                 >
                   Experience
                 </Button>
@@ -156,8 +166,9 @@ export default function AppShellDemo() {
                   variant="subtle"
                   radius="xs"
                   size="lg"
+                  onClick={() => scrollTo({ y: 3180 })}
+                  href="#education"
                   component="a"
-                  href="#edu"
                 >
                   Education
                 </Button>
@@ -167,8 +178,9 @@ export default function AppShellDemo() {
                   variant="subtle"
                   radius="xs"
                   size="lg"
-                  component="a"
+                  onClick={() => scrollTo({ y: 3943.2 })}
                   href="#skills"
+                  component="a"
                 >
                   Skills
                 </Button>

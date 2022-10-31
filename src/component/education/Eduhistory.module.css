@@ -1,0 +1,21 @@
+.stackStyle {
+  padding-left: 3em;
+  text-align: center;
+}
+
+.textTitle {
+  font-size: 25px;
+  cursor: pointer;
+  padding-bottom: 5em;
+}
+
+.textDesc {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 450px) {
+  .stackStyle {
+    padding-left: 0;
+    padding-right: 15vh;
+  }
+}

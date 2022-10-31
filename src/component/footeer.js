@@ -9,7 +9,7 @@ import {
 } from "@mantine/core";
 import {
   IconBrandLinkedin,
-  IconBrandInstagram,
+  IconBrandGithub,
   IconMail,
   IconBrandMantine,
   IconBrandReactNative,
@@ -44,16 +44,16 @@ function Footeer() {
               component="a"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.instagram.com/hoeddah_3/"
-              leftIcon={<IconBrandInstagram size={18} />}
+              href="https://github.com/hudhudd"
+              leftIcon={<IconBrandGithub size={18} />}
               styles={(theme) => ({
                 root: {
-                  backgroundColor: "#ed6ea0",
+                  backgroundColor: "#4078c0",
                   paddingRight: 0,
                   paddingLeft: 11,
 
                   "&:hover": {
-                    backgroundColor: theme.fn.darken("#FAA2C1", 0.05),
+                    backgroundColor: theme.fn.darken("#228BE6", 0.05),
                   },
                 },
               })}
