@@ -1,4 +1,4 @@
-.skill--name {
+.name {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -7,16 +7,15 @@
     padding-left: 1rem;
   }
   
-  .skill--card {
+  .card {
     width: 100%;
-    /* max-height: 6.4rem; */
   }
   
-  .card--persen {
+  .persen {
     padding-right: 1.5rem;
   }
   
-  .skill--prog {
+  .prog {
     padding-bottom: 0;
   }
   

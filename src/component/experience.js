@@ -3,6 +3,7 @@ import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { Carousel } from "@mantine/carousel";
 import { useInView } from "react-intersection-observer";
+import classes from "./experience.module.css";
 
 const andro = [
   "https://cdn.discordapp.com/attachments/860057664984711188/1016586466010341436/andro1.jpeg",
@@ -58,13 +59,13 @@ function Experience() {
       id="exp"
       ref={ref}
     >
-      <div className="exp--container">
+      <div className={classes.container}>
         <div className="section--title">
           <h1>Experience</h1>
         </div>
-        <Stack className="exp-all">
-          <div className="exp--andro">
-            <div className="andro--img">
+        <Stack className={classes.all}>
+          <div className={classes.andro}>
+            <div className={classes.andro_img}>
               <Carousel
                 sx={{ maxWidth: 230 }}
                 withIndicators
@@ -84,10 +85,10 @@ function Experience() {
                 {slides1}
               </Carousel>
             </div>
-            <div className="andro--text">
+            <div className={classes.andro_text}>
               <h2>Android Developer</h2>
               <h3>Capstone Project 2019-2022</h3>
-              <p className="andro--par">
+              <p className={classes.andro_par}>
                 Creating the UI/UX, front-end design, setting connecton to the
                 Django Backend Server, and setting up connection to connect with
                 MQTT protocol for IoT purposes
@@ -95,8 +96,8 @@ function Experience() {
             </div>
           </div>
 
-          <div className="exp--backend">
-            <div className="django--img">
+          <div className={classes.backend}>
+            <div className={classes.backend_img}>
               <Carousel
                 sx={{ maxWidth: 700 }}
                 withIndicators
@@ -116,10 +117,10 @@ function Experience() {
                 {slides2}
               </Carousel>
             </div>
-            <div className="django--text">
+            <div className={classes.backend_text}>
               <h2>Back-End Developer</h2>
               <h3>Capstone Project 2019-2022</h3>
-              <p className="django--par">
+              <p className={classes.backend_par}>
                 Developing Back-End API using Django and Django Rest Framework,
                 Building own MQTT Broker using MOSQUITTO, and Deploying Back-End
                 server using Amazong E2C.
@@ -127,8 +128,8 @@ function Experience() {
             </div>
           </div>
 
-          <div className="exp--hardware">
-            <div className="hw--img">
+          <div className={classes.hw}>
+            <div className={classes.hw_img}>
               <Carousel
                 sx={{ maxWidth: 700 }}
                 withIndicators
@@ -148,14 +149,14 @@ function Experience() {
                 {slides3}
               </Carousel>
             </div>
-            <div className="hw--text">
+            <div className={classes.hw_text}>
               <h2>Hardware Developer</h2>
               <h3>PT. Merapi Tani Instrument 2019</h3>
-              <p className="hw--par">
+              <p className={classes.hw_par}>
                 Researching the maximum and minimum potential of
                 ESP32-WROOM-32D, bq24650EVM, TPS63020EVM-487, and TPS63802EVM.
               </p>
-              <p className="hw--par">
+              <p className={classes.hw_par}>
                 Making the schematics design of ESP32-WROOM-32D.
               </p>
             </div>

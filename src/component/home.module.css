@@ -1,0 +1,24 @@
+.all {
+  position: relative;
+  row-gap: 5rem;
+  padding: 4rem 0 5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.data {
+  align-self: center;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  padding-left: 6%;
+}
+
+.name {
+  color: #40c057;
+}
+.img {
+  padding-right: 20px;
+  margin-top: 0px;
+  width: 500px !important;
+  flex-direction: flex-end;
+}
