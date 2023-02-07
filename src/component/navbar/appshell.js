@@ -178,7 +178,7 @@ export default function AppShellDemo() {
                   variant="subtle"
                   radius="xs"
                   size="lg"
-                  onClick={() => scrollTo({ y: 3943.2 })}
+                  onClick={() => scrollTo({ y: 4243.2 })}
                   href="#skills"
                   component="a"
                 >
