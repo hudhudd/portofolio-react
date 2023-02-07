@@ -20,7 +20,7 @@ function Skills() {
           <h1>Skills</h1>
         </div>
         <Card
-          color="#F1F3F5"
+          
           className={classes.card}          
         >
           <Grid className={classes.grid} gutter={"xs"}>
