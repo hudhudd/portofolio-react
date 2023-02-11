@@ -43,7 +43,7 @@ function About() {
               component="a"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1fS0qjxIyqM2c8aBK7M2rDleutnUn6xaj/view?usp=share_link"
+              href="https://drive.google.com/file/d/1PuYXRG-tib0nObHG2V4iZrBgnLrgmbEa/view?usp=share_link"
               radius="md"
             >
               Download CV
