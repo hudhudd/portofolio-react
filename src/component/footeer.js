@@ -25,7 +25,7 @@ function Footeer() {
               component="a"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/yehuda-suryayanna-5016ba114/"
+              href="https://www.linkedin.com/in/yehuda-yovel/"
               leftIcon={<IconBrandLinkedin size={18} />}
               styles={(theme) => ({
                 root: {
